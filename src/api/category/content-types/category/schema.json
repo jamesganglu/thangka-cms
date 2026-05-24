@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_en": {
+      "type": "string"
+    },
+    "name_zh": {
+      "type": "string"
+    },
+    "description_en": {
+      "type": "blocks"
+    },
+    "description_zh": {
+      "type": "blocks"
+    },
+    "order": {
+      "type": "integer",
+      "unique": false
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "category"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "categories"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "thangkas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::thangka.thangka",
+      "mappedBy": "category"
+    },
+    "level": {
+      "type": "integer"
+    },
+    "isLeave": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_timespan_timespans",
+  "info": {
+    "displayName": "timespans"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}
