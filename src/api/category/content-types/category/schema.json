@@ -58,6 +58,12 @@
     "isLeave": {
       "type": "boolean",
       "default": false
+    },
+    "short_desc_en": {
+      "type": "string"
+    },
+    "short_desc_zh": {
+      "type": "string"
     }
   }
 }
