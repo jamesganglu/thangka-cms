@@ -680,6 +680,8 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
     name_zh: Schema.Attribute.String;
     order: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
+    short_desc_en: Schema.Attribute.String;
+    short_desc_zh: Schema.Attribute.String;
     thangkas: Schema.Attribute.Relation<'oneToMany', 'api::thangka.thangka'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
