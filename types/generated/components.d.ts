@@ -1,16 +1,5 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
-export interface EventsEvents extends Struct.ComponentSchema {
-  collectionName: 'components_events_events';
-  info: {
-    displayName: 'events';
-  };
-  attributes: {
-    image: Schema.Attribute.Media<'images'>;
-    text: Schema.Attribute.Blocks;
-  };
-}
-
 export interface HistoriesHistories extends Struct.ComponentSchema {
   collectionName: 'components_histories_histories';
   info: {
@@ -18,6 +7,17 @@ export interface HistoriesHistories extends Struct.ComponentSchema {
   };
   attributes: {
     image: Schema.Attribute.Media<'images'>;
+    text: Schema.Attribute.Blocks;
+  };
+}
+
+export interface ImageTextImageText extends Struct.ComponentSchema {
+  collectionName: 'components_image_text_image_texts';
+  info: {
+    displayName: 'image-text';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     text: Schema.Attribute.Blocks;
   };
 }
@@ -35,8 +35,8 @@ export interface TimespanTimespans extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
-      'events.events': EventsEvents;
       'histories.histories': HistoriesHistories;
+      'image-text.image-text': ImageTextImageText;
       'timespan.timespans': TimespanTimespans;
     }
   }

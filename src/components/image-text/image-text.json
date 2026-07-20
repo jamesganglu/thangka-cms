@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_events_events",
+  "collectionName": "components_image_text_image_texts",
   "info": {
-    "displayName": "events"
+    "displayName": "image-text"
   },
   "options": {},
   "attributes": {
@@ -12,7 +12,10 @@
       "type": "media",
       "multiple": false,
       "allowedTypes": [
-        "images"
+        "images",
+        "files",
+        "videos",
+        "audios"
       ]
     }
   },

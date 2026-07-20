@@ -23,15 +23,7 @@
         }
       }
     },
-    "content": {
-      "type": "blocks",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "image": {
+    "video": {
       "type": "media",
       "pluginOptions": {
         "i18n": {
@@ -40,8 +32,18 @@
       },
       "multiple": false,
       "allowedTypes": [
-        "images"
+        "videos"
       ]
+    },
+    "detail": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "image-text.image-text",
+      "repeatable": true
     }
   }
 }
