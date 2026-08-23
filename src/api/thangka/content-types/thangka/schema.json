@@ -13,7 +13,8 @@
   "attributes": {
     "identify": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "category": {
       "type": "relation",

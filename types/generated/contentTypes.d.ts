@@ -869,7 +869,9 @@ export interface ApiThangkaThangka extends Struct.CollectionTypeSchema {
     description_en: Schema.Attribute.Blocks;
     description_zh: Schema.Attribute.Blocks;
     era: Schema.Attribute.String;
-    identify: Schema.Attribute.String & Schema.Attribute.Required;
+    identify: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
     image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
     isavailable: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
     isfeatured: Schema.Attribute.Boolean;
