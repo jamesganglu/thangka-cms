@@ -1,0 +1,23 @@
+{
+    "collectionName": "components_image_text_image_texts",
+    "info": {
+        "displayName": "image-text"
+    },
+    "options": {},
+    "attributes": {
+        "text": {
+            "type": "blocks"
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        }
+    },
+    "config": {}
+}
