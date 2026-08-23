@@ -1,33 +1,12 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
-export interface EventsEvents extends Struct.ComponentSchema {
-  collectionName: 'components_events_events';
+export interface ImageTextImageText extends Struct.ComponentSchema {
+  collectionName: 'components_image_text_image_texts';
   info: {
-    displayName: 'events';
+    displayName: 'image-text';
   };
   attributes: {
-    image: Schema.Attribute.Media<'images'>;
-    text: Schema.Attribute.Blocks;
-  };
-}
-
-export interface HistoriesHistories extends Struct.ComponentSchema {
-  collectionName: 'components_histories_histories';
-  info: {
-    displayName: 'histories';
-  };
-  attributes: {
-    image: Schema.Attribute.Media<'images'>;
-    text: Schema.Attribute.Blocks;
-  };
-}
-
-export interface TimespanTimespans extends Struct.ComponentSchema {
-  collectionName: 'components_timespan_timespans';
-  info: {
-    displayName: 'timespans';
-  };
-  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     text: Schema.Attribute.Blocks;
   };
 }
@@ -35,9 +14,7 @@ export interface TimespanTimespans extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
-      'events.events': EventsEvents;
-      'histories.histories': HistoriesHistories;
-      'timespan.timespans': TimespanTimespans;
+      'image-text.image-text': ImageTextImageText;
     }
   }
 }

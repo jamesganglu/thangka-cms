@@ -23,6 +23,18 @@
         }
       }
     },
+    "video": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
     "brief": {
       "type": "blocks",
       "pluginOptions": {
@@ -39,16 +51,6 @@
         }
       }
     },
-    "event": {
-      "type": "component",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "events.events",
-      "repeatable": true
-    },
     "history": {
       "type": "component",
       "pluginOptions": {
@@ -56,7 +58,25 @@
           "localized": true
         }
       },
-      "component": "histories.histories",
+      "component": "image-text.image-text",
+      "repeatable": true
+    },
+    "eventsBrief": {
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "event": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "image-text.image-text",
       "repeatable": true
     }
   }

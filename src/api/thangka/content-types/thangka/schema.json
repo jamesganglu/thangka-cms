@@ -12,7 +12,8 @@
   "pluginOptions": {},
   "attributes": {
     "identify": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "category": {
       "type": "relation",
@@ -35,12 +36,14 @@
     "image": {
       "type": "media",
       "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images"
       ]
     },
     "isavailable": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true
     },
     "isfeatured": {
       "type": "boolean"

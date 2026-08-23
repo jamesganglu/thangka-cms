@@ -24,7 +24,8 @@
       },
       "multiple": true,
       "allowedTypes": [
-        "images"
+        "images",
+        "videos"
       ]
     },
     "historyText": {
