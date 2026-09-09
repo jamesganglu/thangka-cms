@@ -55,7 +55,13 @@
         "era": {
             "type": "string"
         },
+        "era_zh": {
+            "type": "string"
+        },
         "material": {
+            "type": "string"
+        },
+        "material_zh": {
             "type": "string"
         },
         "relatedImages": {

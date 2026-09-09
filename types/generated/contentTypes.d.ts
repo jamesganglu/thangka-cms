@@ -883,6 +883,7 @@ export interface ApiThangkaThangka extends Struct.CollectionTypeSchema {
     description_en: Schema.Attribute.Blocks;
     description_zh: Schema.Attribute.Blocks;
     era: Schema.Attribute.String;
+    era_zh: Schema.Attribute.String;
     identify: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
@@ -896,6 +897,7 @@ export interface ApiThangkaThangka extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     material: Schema.Attribute.String;
+    material_zh: Schema.Attribute.String;
     name_en: Schema.Attribute.String;
     name_zh: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
